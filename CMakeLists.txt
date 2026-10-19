@@ -3,7 +3,7 @@ project(large_warehouse_world)
 
 find_package(ament_cmake REQUIRED)
 
-install(DIRECTORY config launch models worlds
+install(DIRECTORY config launch maps models worlds
         DESTINATION share/${PROJECT_NAME})
 
 ament_package()

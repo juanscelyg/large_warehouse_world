@@ -150,6 +150,15 @@ A facility of this size easily reaches tens of thousands of visuals and collisio
 
 Measured on an RTX 4070 laptop: the world loads in about 16 s, the physics runs at 4.8x real time without throttling, and a 1280 x 720 camera renders at about 24 fps.
 
+## Point cloud map
+
+`maps/large_warehouse_world.pcd` is a point cloud of the whole facility (binary PCD, 72 MB,
+5 995 361 points x y z in the world frame), made with
+[ray_tracing_plugin](https://github.com/juanscelyg/ray_tracing_plugin): vertical rays every
+0.25 m over x = -10..710, y = -10..510, cast down from z = 14.1 m. Each point is the highest
+collision surface of its cell, so rows of racks and lanes of pallets appear as their merged
+collision boxes, and the doors are hidden by the lintels above them.
+
 ## Models
 
 All the models are in `models/` and can be used in any world:
@@ -187,6 +196,7 @@ large_warehouse_world/
 ├── config/      zones, doors and models ground truth
 ├── docs/        plan and images
 ├── launch/      launch files
+├── maps/        point cloud map
 ├── models/      model library and generated models
 ├── scripts/     generators (signs, world, models yaml)
 └── worlds/      world files
