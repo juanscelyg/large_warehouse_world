@@ -52,12 +52,12 @@ ros2 launch large_warehouse_world large_warehouse.launch.py world:=large_warehou
 
 The launch files add `share/large_warehouse_world/models` to `GZ_SIM_RESOURCE_PATH`. If you run `gz sim` directly, add that folder yourself so `model://` URIs are found.
 
-> **Init poses:** suggested init poses for robots (free floor, x y in meters):
+> **Init poses:** suggested init poses for robots (free floor, x y in meters and z:=`0.5`):
 > Warehouse A `100 300` (central plaza), Warehouse B `300 230`, Warehouse C `587 140`, reception `300 405`, truck lane `100 190`, truck yard `300 50`.
 
 ## Plan and zones
 
-![Plan](docs/imgs/plan.png)
+<!-- ![Plan](docs/imgs/plan.png) -->
 
 The world frame has x to the east and y to the north. The origin is the south-west corner of the plan bounding box (x = 0 is the west wall of Warehouse A, y = 0 the south baseline of the plan). All the measures of the plan are in meters.
 
