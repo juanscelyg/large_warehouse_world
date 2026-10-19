@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="pallet_jack_yellow">
+    <static>true</static>
+    <link name="link">
+      <collision name="body_collision">
+        <pose>0.065 -0.015 0.495 0 0 0</pose>
+        <geometry><box><size>1.15 0.53 0.97</size></box></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE</uri>
+          </mesh>
+        </geometry>
+        <meta>
+          <layer> 1 </layer>
+        </meta>
+      </visual>
+    </link>
+  </model>
+</sdf>

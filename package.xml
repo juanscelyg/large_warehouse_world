@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>large_warehouse_world</name>
+  <version>0.0.0</version>
+  <description>large_warehouse_world: Gazebo world of a large logistics facility (three warehouses, reception and offices, and a truck loading zone) with a model library for robot fleet simulation.</description>
+
+  <maintainer email="juanscelyg@gmail.com">Juan S. Cely G.</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <author>Juan S. Cely G.</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

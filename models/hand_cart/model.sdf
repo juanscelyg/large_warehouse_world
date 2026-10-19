@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="hand_cart">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="platform_collision">
+        <pose>0 0 0.31 0 0 0</pose>
+        <geometry><box><size>1.0 2.0 0.6</size></box></geometry>
+      </collision>
+      <visual name="base_visual">
+        <geometry>
+          <mesh>
+            <uri>base_visual.glb</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

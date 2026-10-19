@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="handtruck">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="body_collision">
+        <pose>0 -0.04 0.31 0 0 0</pose>
+        <geometry><box><size>0.44 0.85 0.6</size></box></geometry>
+      </collision>
+      <visual name="base_visual">
+        <geometry>
+          <mesh>
+            <uri>base_visual.glb</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

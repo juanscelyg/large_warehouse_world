@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="truck_box">
+    <static>true</static>
+    <link name="body">
+      <collision name="body_collision">
+        <pose>0 0 1.005 0 0 0</pose>
+        <geometry><box><size>4.0 1.63 1.99</size></box></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/truck.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

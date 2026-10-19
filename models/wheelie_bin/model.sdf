@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="wheelie_bin">
+    <static>true</static>
+    <link name="link">
+      <collision name="body_collision">
+        <pose>0 0 0.67 0 0 0</pose>
+        <geometry><box><size>1.44 0.89 1.32</size></box></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE</uri>
+          </mesh>
+        </geometry>
+        <meta>
+          <layer> 1 </layer>
+        </meta>
+      </visual>
+    </link>
+  </model>
+</sdf>

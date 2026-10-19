@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="cargo_container_40ft" canonical_link="container_link" placement_frame="container_link">
+    <static>true</static>
+    <self_collide>false</self_collide>
+    <link name="container_link">
+      <visual name="floor_visual">
+        <geometry>
+          <box>
+            <size>12.19 2.44 0.005</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0025 0 0 0</pose>
+        <material>
+          <ambient>0.9 1.0 0.3 1</ambient>
+          <diffuse>0.9 1.0 0.3 1</diffuse>
+          <specular>0.3 0.3 0.1 1</specular>
+        </material>
+      </visual>
+      <visual name="left_wall_visual">
+        <geometry>
+          <box>
+            <size>12.19 0.055 2.38</size>
+          </box>
+        </geometry>
+        <pose>0 1.1925 1.195 0 0 0</pose>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.2 0.2 0.2 1</specular>
+        </material>
+      </visual>
+      <visual name="right_wall_visual">
+        <geometry>
+          <box>
+            <size>12.19 0.055 2.38</size>
+          </box>
+        </geometry>
+        <pose>0 -1.1925 1.195 0 0 0</pose>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.2 0.2 0.2 1</specular>
+        </material>
+      </visual>
+      <visual name="ceiling_visual">
+        <geometry>
+          <box>
+            <size>12.19 2.44 0.205</size>
+          </box>
+        </geometry>
+        <pose>0 0 2.4875 0 0 0</pose>
+        <material>
+          <ambient>1 0 0 0.3</ambient>
+          <diffuse>1 0 0 0.3</diffuse>
+          <specular>0.2 0.2 0.2 1</specular>
+        </material>
+      </visual>
+      <visual name="front_wall_visual">
+        <geometry>
+          <box>
+            <size>0.09 2.33 2.38</size>
+          </box>
+        </geometry>
+        <pose>6.050 0 1.195 0 0 0</pose>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <specular>0.2 0.2 0.2 1</specular>
+        </material>
+      </visual>
+      <collision name="floor_collision">
+        <geometry>
+          <box>
+            <size>12.19 2.44 0.005</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.0025 0 0 0</pose>
+      </collision>
+      <collision name="left_wall_collision">
+        <geometry>
+          <box>
+            <size>12.19 0.055 2.38</size>
+          </box>
+        </geometry>
+        <pose>0 1.1925 1.195 0 0 0</pose>
+      </collision>
+      <collision name="right_wall_collision">
+        <geometry>
+          <box>
+            <size>12.19 0.055 2.38</size>
+          </box>
+        </geometry>
+        <pose>0 -1.1925 1.195 0 0 0</pose>
+      </collision>
+      <collision name="ceiling_collision">
+        <geometry>
+          <box>
+            <size>12.19 2.44 0.205</size>
+          </box>
+        </geometry>
+        <pose>0 0 2.4875 0 0 0</pose>
+      </collision>
+      <collision name="front_wall_collision">
+        <geometry>
+          <box>
+            <size>0.09 2.33 2.38</size>
+          </box>
+        </geometry>
+        <pose>6.050 0 1.195 0 0 0</pose>
+      </collision>
+      <pose>0 0 0 0 0 0</pose>
+    </link>
+  </model>
+</sdf>

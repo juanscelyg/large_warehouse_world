@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="hatchback_blue">
+    <include>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Hatchback%20blue</uri>
+    </include>
+  </model>
+</sdf>

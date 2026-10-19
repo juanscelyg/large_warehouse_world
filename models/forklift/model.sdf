@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="forklift">
+    <static>true</static>
+    <link name="base_link">
+      <collision name="body_collision">
+        <pose>0 0.09 1.07 0 0 0</pose>
+        <geometry><box><size>1.14 1.92 2.12</size></box></geometry>
+      </collision>
+      <collision name="forks_collision">
+        <pose>0 1.67 0.15 0 0 0</pose>
+        <geometry><box><size>0.7 1.24 0.2</size></box></geometry>
+      </collision>
+      <visual name="base_visual">
+        <geometry>
+          <mesh>
+            <uri>base_visual.glb</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
