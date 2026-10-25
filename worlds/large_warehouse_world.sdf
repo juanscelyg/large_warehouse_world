@@ -4,13 +4,13 @@
      Recepcion y oficinas (300 x 50 m) and the truck loading zone. -->
 <sdf version="1.9">
   <world name="large_warehouse_world">
-    <!-- The Bullet collision detector of DART scales much better than FCL with the
-         thousands of static collision boxes of the warehouse -->
-    <physics name="1ms" type="ignored">
-      <max_step_size>0.001</max_step_size>
+    <!-- ODE collision detector: with Bullet a Kobuki tips over and flies away as soon
+         as it turns. 4 ms steps, like the small robots' playground worlds. -->
+    <physics name="4ms" type="ignored">
+      <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
       <dart>
-        <collision_detector>bullet</collision_detector>
+        <collision_detector>ode</collision_detector>
       </dart>
     </physics>
 
@@ -72,6 +72,12 @@
     <include>
       <uri>model://warehouse_a_storage</uri>
       <name>warehouse_a_storage</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <!-- Packages on the floor level of the Warehouse A racks -->
+    <include>
+      <uri>model://warehouse_a_floor_stock</uri>
+      <name>warehouse_a_floor_stock</name>
       <pose>0 0 0 0 0 0</pose>
     </include>
     <include>
