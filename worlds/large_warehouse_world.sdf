@@ -74,6 +74,12 @@
       <name>warehouse_a_storage</name>
       <pose>0 0 0 0 0 0</pose>
     </include>
+    <!-- Packages on the floor level of the Warehouse A racks -->
+    <include>
+      <uri>model://warehouse_a_floor_stock</uri>
+      <name>warehouse_a_floor_stock</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
     <include>
       <uri>model://warehouse_b_storage</uri>
       <name>warehouse_b_storage</name>
